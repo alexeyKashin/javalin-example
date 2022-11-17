@@ -1,0 +1,22 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.7.20'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.20"
+
+    implementation("io.javalin:javalin:5.1.4")
+
+    implementation("org.slf4j:slf4j-simple:2.0.3")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.14.0")
+    implementation group: 'com.fasterxml.jackson.module', name: 'jackson-module-kotlin', version: '2.14.0'
+
+
+}
